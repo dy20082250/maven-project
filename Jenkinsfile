@@ -10,8 +10,7 @@ pipeline{
 	    	steps{
 	    		echo "Running ${env.BUILD_NUMBER} on ${env.JENKINS_URL}"
 	    		echo "print ${env.BRANCH_NAME}"
-	    		echo "print ${env.BUILD_URL}"
-	    		echo "print ${env.GIT_BRANCH}"
+
 	    	}
     	}
     }
