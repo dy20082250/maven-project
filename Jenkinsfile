@@ -6,7 +6,7 @@ pipeline{
  }
 
     stages {
-    	stage {
+    	stage('test env') {
 	    	steps{
 	    		echo 'Running ${env.BUILD_NUMBER} on ${env.JENKINS_URL}'
 	    		echo 'print ${env.BRANCH_NAME}'
