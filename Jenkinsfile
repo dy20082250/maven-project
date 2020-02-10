@@ -2,7 +2,7 @@ pipeline{
 
  agent any
  options{
- 	retry(2)
+ 	buildDiscarder(logRotator(numToKeepStr:'3'))
  }
 
     stages {
@@ -22,8 +22,6 @@ pipeline{
 	stage('test'){
 		steps{
 			sh 'echo ok'
-			error('emm....')
-
 		}
 	}
 
