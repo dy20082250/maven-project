@@ -10,7 +10,7 @@ pipeline{
     stage('checkout code'){
         steps{
             sh 'echo "checkout code"'
-            
+
             }
         }
 	stage('build'){
@@ -18,6 +18,7 @@ pipeline{
 	   //	sh 'mvn clean package'
 	    	sh 'printenv'
 	   }
+	}
 	stage('test'){
 		steps{
 			sh 'echo ok'
@@ -27,6 +28,5 @@ pipeline{
 	}
 
 	}
-    }
 
 }
